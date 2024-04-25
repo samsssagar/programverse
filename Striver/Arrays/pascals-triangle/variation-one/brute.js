@@ -12,4 +12,20 @@ function ncr(row, col) {
     return res;
 }
 
-console.log(ncr(5, 3));
+// console.log(ncr(5, 3));
+
+
+
+
+function ncrRepeat(row, col) {
+    let r = row - 1;
+    let c = col - 1;
+    let res = 1;
+    for (let i = 0; i < c; i++) {
+        res = res * (r - i);
+        res = res / (i + 1);
+    }
+    return res;
+}
+
+console.log(ncrRepeat(5, 3));
