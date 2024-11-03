@@ -8,3 +8,10 @@ function palindrome(i, str, n) {
 }
 
 console.log(palindrome(0, "dog", 3));
+
+
+function palin() {
+
+}
+
+// madam
